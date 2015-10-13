@@ -46,6 +46,12 @@
   <ItemGroup>
     <Compile Include="Controller.cs" />
     <Compile Include="Model.cs" />
+    <Compile Include="TwoZeroFourEightScoreView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TwoZeroFourEightScoreView.Designer.cs">
+      <DependentUpon>TwoZeroFourEightScoreView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View.cs" />
     <Compile Include="TwoZeroFourEightController.cs" />
     <Compile Include="TwoZeroFourEightView.cs">

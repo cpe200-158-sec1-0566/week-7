@@ -28,6 +28,7 @@ namespace twozerofoureight
         public void Notify(Model m)
         {
             UpdateBoard(((TwoZeroFourEightModel) m).GetBoard());
+            label1.Text = Convert.ToString(((TwoZeroFourEightModel)m).Score());
         }
 
         private void UpdateTile(Label l, int i)
@@ -41,7 +42,7 @@ namespace twozerofoureight
             switch (i)
             {
                 case 0:
-                    l.BackColor = Color.Gray;
+                    l.BackColor = Color.Aqua;
                     break;
                 case 2:
                     l.BackColor = Color.DarkGray;
@@ -53,7 +54,7 @@ namespace twozerofoureight
                     l.BackColor = Color.Red;
                     break;
                 default:
-                    l.BackColor = Color.Green;
+                    l.BackColor = Color.LimeGreen;
                     break;
             }
         }
@@ -80,6 +81,8 @@ namespace twozerofoureight
         private void btnLeft_Click(object sender, EventArgs e)
         {
             controller.ActionPerformed(TwoZeroFourEightController.LEFT);
+            
+
         }
 
         private void btnRight_Click(object sender, EventArgs e)
@@ -95,7 +98,18 @@ namespace twozerofoureight
         private void btnDown_Click(object sender, EventArgs e)
         {
             controller.ActionPerformed(TwoZeroFourEightController.DOWN);
+            
         }
 
+       
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TwoZeroFourEightView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
