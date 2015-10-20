@@ -16,5 +16,15 @@ namespace twozerofoureight
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void _label1_Click(string a)
+        {
+            label1.Text = a;
+        }
     }
 }
